@@ -10,6 +10,8 @@ import NotFound from "./components/pages/NotFound";
 import AddUser from "./components/users/AddUser";
 import EditUser from "./components/users/EditUser";
 import User from "./components/users/User";
+import Dispatchcc from "./components/users/Dispatchcc";
+import Dispatch from "./components/users/Dispatch";
 
 function App(props) {
   return (
@@ -24,6 +26,8 @@ function App(props) {
           <Route exact path="/users/add" component={AddUser} />
           <Route exact path="/users/edit/:id" component={EditUser} />
           <Route exact path="/users/:id" component={User} />
+          <Route exact path="/dispatch" component={Dispatch}/>
+          <Route exact path="/dispatchcc" component={Dispatchcc}/>
           <Route component={NotFound} />
         </Switch>
       </div>
